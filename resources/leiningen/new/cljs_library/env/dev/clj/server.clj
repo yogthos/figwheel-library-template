@@ -34,4 +34,4 @@
   (resources "/" {:root "public"})
   (not-found "Not Found"))
 
-(def app (wrap-reload #'routes))
+(def app (wrap-reload #'routes {:dir ["env/dev/clj"]}))
