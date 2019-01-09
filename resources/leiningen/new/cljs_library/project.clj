@@ -4,12 +4,12 @@
             :license {:name "Eclipse Public License"
                       :url "http://www.eclipse.org/legal/epl-v10.html"}
   :dependencies
-  [[org.clojure/clojure "1.9.0" :scope "provided"]
-   [org.clojure/clojurescript "1.10.339" :scope "provided"]]
+  [[org.clojure/clojure "1.10.0" :scope "provided"]
+   [org.clojure/clojurescript "1.10.439" :scope "provided"]]
 
   :plugins
   [[lein-cljsbuild "1.1.7"]
-   [lein-figwheel "0.5.16"]
+   [lein-figwheel "0.5.18"]
    [cider/cider-nrepl "0.15.1"]
    [lein-doo "0.1.10"]]
 
@@ -25,14 +25,14 @@
    {:dependencies
     [[ring-server "0.5.0"]
      [ring-webjars "0.2.0"]
-     [ring "1.7.0"]
+     [ring "1.7.1"]
      [ring/ring-defaults "0.3.1"]
      [compojure "1.6.1"]
      [hiccup "1.0.5"]
-     [nrepl "0.4.4"]
+     [nrepl "0.5.3"]
      [binaryage/devtools "0.9.10"]
-     [cider/piggieback "0.3.9"]
-     [figwheel-sidecar "0.5.16"]
+     [cider/piggieback "0.3.10"]
+     [figwheel-sidecar "0.5.18"]
      [reagent "0.8.1"]]
 
     :source-paths ["src/clj" "src/cljc" "src/cljs" "env/dev/clj" "env/dev/cljs"]
