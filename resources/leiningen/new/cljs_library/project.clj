@@ -10,7 +10,7 @@
   :plugins
   [[lein-cljsbuild "1.1.7"]
    [lein-figwheel "0.5.18"]
-   [cider/cider-nrepl "0.15.1"]
+   [cider/cider-nrepl "0.19.0"]
    [lein-doo "0.1.10"]]
 
   :clojurescript? true
