@@ -5,12 +5,12 @@
                       :url "http://www.eclipse.org/legal/epl-v10.html"}
   :dependencies
   [[org.clojure/clojure "1.10.0" :scope "provided"]
-   [org.clojure/clojurescript "1.10.439" :scope "provided"]]
+   [org.clojure/clojurescript "1.10.520" :scope "provided"]]
 
   :plugins
   [[lein-cljsbuild "1.1.7"]
    [lein-figwheel "0.5.18"]
-   [cider/cider-nrepl "0.19.0"]
+   [cider/cider-nrepl "0.21.1"]
    [lein-doo "0.1.10"]]
 
   :clojurescript? true
@@ -26,12 +26,12 @@
     [[ring-server "0.5.0"]
      [ring-webjars "0.2.0"]
      [ring "1.7.1"]
-     [ring/ring-defaults "0.3.1"]
+     [ring/ring-defaults "0.3.2"]
      [compojure "1.6.1"]
      [hiccup "1.0.5"]
-     [nrepl "0.5.3"]
+     [nrepl "0.6.0"]
      [binaryage/devtools "0.9.10"]
-     [cider/piggieback "0.3.10"]
+     [cider/piggieback "0.4.0"]
      [figwheel-sidecar "0.5.18"]
      [reagent "0.8.1"]]
 
