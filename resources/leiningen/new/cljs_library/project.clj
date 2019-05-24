@@ -31,11 +31,11 @@
      [hiccup "1.0.5"]
      [nrepl "0.6.0"]
      [binaryage/devtools "0.9.10"]
-     [cider/piggieback "0.4.0"]
+     [cider/piggieback "0.4.1"]
      [figwheel-sidecar "0.5.18"]
      [reagent "0.8.1"]]
 
-    :source-paths ["src/clj" "src/cljc" "src/cljs" "env/dev/clj" "env/dev/cljs"]
+    :source-paths ["src" "env/dev/clj" "env/dev/cljs"]
     :resource-paths ["resources" "env/dev/resources" "target/cljsbuild"]
 
     :figwheel
