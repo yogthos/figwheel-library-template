@@ -7,7 +7,7 @@ This setup allows for interactive development and testing for ClojureScript
 libraries.
 
 The template will generate a stub for the `<project-name>.core` namespace under
-`src/<proejct-name>`, and test sources in the `env/dev/<project-name>/` folder.
+`src/<project-name>`, and test sources in the `env/dev/<project-name>/` folder.
 
 A test page is generated in the `env/dev<project-name>/test_page.cljs` file.
 This page will be loaded when `lein figwheel` is run.
@@ -16,7 +16,7 @@ This page will be loaded when `lein figwheel` is run.
 
 create a new library project
 
-    lein new cljs-lib mylib
+    lein new cljs-library mylib
 
 run in development mode:
 
