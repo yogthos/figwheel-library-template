@@ -5,7 +5,7 @@
                       :url "http://www.eclipse.org/legal/epl-v10.html"}
   :dependencies
   [[org.clojure/clojure "1.10.0" :scope "provided"]
-   [org.clojure/clojurescript "1.10.520" :scope "provided"]]
+   [org.clojure/clojurescript "1.10.597" :scope "provided"]]
 
   :plugins
   [[lein-cljsbuild "1.1.7"]
@@ -25,15 +25,15 @@
    {:dependencies
     [[ring-server "0.5.0"]
      [ring-webjars "0.2.0"]
-     [ring "1.7.1"]
+     [ring "1.8.0"]
      [ring/ring-defaults "0.3.2"]
      [compojure "1.6.1"]
      [hiccup "1.0.5"]
      [nrepl "0.6.0"]
-     [binaryage/devtools "0.9.10"]
-     [cider/piggieback "0.4.1"]
-     [figwheel-sidecar "0.5.18"]
-     [reagent "0.8.1"]]
+     [binaryage/devtools "0.9.11"]
+     [cider/piggieback "0.4.2"]
+     [figwheel-sidecar "0.5.19"]
+     [reagent "0.9.0-rc4"]]
 
     :source-paths ["src" "env/dev/clj" "env/dev/cljs"]
     :resource-paths ["resources" "env/dev/resources" "target/cljsbuild"]
