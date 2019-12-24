@@ -9,7 +9,7 @@
 
   :plugins
   [[lein-cljsbuild "1.1.7"]
-   [lein-figwheel "0.5.18"]
+   [lein-figwheel "0.5.19"]
    [cider/cider-nrepl "0.21.1"]
    [lein-doo "0.1.10"]]
 

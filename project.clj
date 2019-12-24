@@ -1,4 +1,4 @@
-(defproject cljs-library/lein-template "0.1.6"
+(defproject cljs-library/lein-template "0.1.7"
   :description "a template for ClojureScript libraries"
   :url "https://github.com/yogthos/figwheel-library-template"
   :license {:name "Eclipse Public License"
