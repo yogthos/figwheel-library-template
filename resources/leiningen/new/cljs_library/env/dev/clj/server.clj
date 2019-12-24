@@ -1,6 +1,5 @@
 (ns {{project-ns}}.server
-  (:require [compojure.core :refer [GET defroutes]]
-            [compojure.route :refer [not-found resources]]
+  (:require [reitit.ring :as ring]
             [hiccup.page :refer [include-js include-css html5]]
             [ring.middleware.reload :refer [wrap-reload]]
             [ring.util.response :as response]))
@@ -27,11 +26,13 @@
      mount-target
      (include-js "/js/app.js")]))
 
-(defroutes routes
-  (GET "/" []
-    (-> (response/response (loading-page))
-        (response/content-type "text/html")))
-  (resources "/" {:root "public"})
-  (not-found "Not Found"))
+(def handler
+  (ring/ring-handler
+   (ring/router
+    [["/" {:get (fn [_]
+                  (-> (response/response (loading-page))
+                      (response/content-type "text/html")))}]
+     ["/public/*" (ring/create-resource-handler)]])
+   (ring/create-default-handler)))
 
-(def app (wrap-reload #'routes {:dir ["env/dev/clj"]}))
+(def app (wrap-reload #'handler {:dir ["env/dev/clj"]}))
